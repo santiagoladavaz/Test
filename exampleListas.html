@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Ejemplo Listas</title>
+
+		<!-- BOOTSTRAP -->
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!-- /BOOTSTRAP -->
+		
+		<link rel="stylesheet" type="text/css" href="css/estilosTabla.css">
+	
+</head>
+
+<body>
+	<div class="container">
+		
+		<h1> Ejemplo Listas</h1>
+			
+			<h3><u> Listas Ordenadas</u></h3>
+		
+		
+		<div class="row">
+				  <div class="col-md-9 .col-md-push-3">
+		    			 <div class="thumbnail">
+		    			 	<p >
+								Las listas ordenadas van enmarcadas dentro de las etiquetas OL.
+								Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: LI.
+								Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.
+								En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”.
+								Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.
+							</p>
+		     			   </div>
+		    			</div>
+		 		  </div>
+		 		
+				<div class="col-md-4">
+		    			 <h4>Grupos</h4>
+		
+						<ol>
+							<li value="1">HTML (21/04/15)</li>
+							<li>HTTP-PROXY-CACHING (21/04/15)</li>
+							<li>Name Service (DNS) (28/04/15)</li>
+							<li>SMTP-MIME-POP3/IMAP (28/04/15)</li>
+							<li>SNMP (05/05/15)</li>
+							<li>Tenet/ssh scp rdp (05/05/15)</li>
+							<li>ICMP-PING-TRACEROUTE (02/06/15)</li>
+							<li>NAT-NATP-FIREWALLS (02/06/15)</li>
+							<li>DHCP-ARP (09/06/15)</li>
+							<li>LAN 802.3 – ETHERNET (09/06/15)</li>
+						</ol>
+		    	</div>
+				
+		
+		<div class="row">
+				  <div class="col-md-9 .col-md-push-3">
+						<h3><u> Listas NO Ordenadas</u></h3>
+		    			 <div class="thumbnail">
+		    			 	<p>
+								Las listas no ordenadas van dentro de la etiqueta UL y de su cierre /UL. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta LI y su cierre.
+								Si no le indicamos nada a la etiqueta LI, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.
+							</p>
+		     			   </div>
+		    			</div>
+		 		  </div>
+		 		
+				<div class="col-md-4">
+		    			 <h4>Integrantes Grupo 1</h4>
+		
+						<ul class="list-group">
+							<li type="circle">Santiago Ladavaz</li>
+							<li type="square">Luis Zagarella</li>
+							<li type="disc">Jorge Flores</li>
+							<li id="cuartoIntegrante">4 Integrante </li>
+						</ul>
+		    	</div>
+		
+				
+			
+	
+	
+
+  
+		 	
+ </div> <!-- Cierra container -->
+ 	
+</body>
+</html>

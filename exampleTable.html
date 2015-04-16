@@ -1,0 +1,197 @@
+<!-- CONCEPTOS BÁSICOS. ESTRUCTURA BÁSICA DE UNA PÁGINA HTML. ETIQUETAS HEAD, BODY.
+
+Vamos a explicar conceptos básicos de HTML. En primer lugar veremos cuál es la estructura básica que toda página HTML debe cumplir. Para ello introduciremos las etiquetas HTML, HEAD y BODY, y sus respectivas etiquetas de cierre.
+
+ 
+
+
+ 
+
+Toda página web viene definida con la siguiente estructura básica (recuerda que la primera línea es una etiqueta relativa a la versión/variante de HTML que declaramos usar y que esta primera etiqueta no es estrictamente necesaria. Sirve únicamente para indicar qué estándar de HTML es el que declaramos usar).
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Título de la página web</title>
+...
+</head>
+<body>
+Cuerpo de la página web
+</body>
+</html>
+ 
+
+ 
+
+Vamos a analizar más detenidamente las distintas secciones que componen la página.
+
+La etiqueta <html> define que se trata de código HTML.
+
+ 
+
+ 
+
+CABECERA DEL DOCUMENTO (HEAD)
+
+La cabecera del documento es la sección comprendida entre <head> y </head>. En ella se debe encontrar, obligatoriamente, el título (entre las etiquetas <title> y </title>).
+
+El título de la página debe describir su contenido por ejemplo: <title>Manuales y tutoriales sobre programación – aprenderaprogramar.com</title>
+
+No sería adecuado usar el título <title>Página de Inicio</title> porque éste no dice nada por sí solo. Debemos usar títulos que sean descriptivos relativos al contenido de la página.
+
+Además de la etiqueta title dentro de la sección de cabecera se suelen incluir otras etiquetas. La siguiente tabla muestra un resumen de elementos que pueden ir dentro de la etiqueta head.
+
+Etiqueta en cabecera
+Función
+¿Es obligatoria?
+<title>
+Da un título al documento HTML
+Sí
+<base>
+Define ruta de acceso
+No
+<link>
+Define archivos vinculados
+No
+<meta>
+Define metadatos como descripción y palabras clave
+No
+<script>
+Delimita scripts incluídos
+No
+<style>
+Delimita definición de estilos
+No
+ 
+
+ 
+
+Comentaremos brevemente estas etiquetas a continuación.
+
+Etiqueta <base>. Sirve para indicar la URL base en caso de especificarse URLs relativas dentro de la página web. Por ejemplo <base href="http://www.aprenderaprogramar.com/images/" target="_blank"> haría que si escribimos como ruta de una imagen "logo.png" dicha ruta sea en realidad "http://www.aprenderaprogramar.com/images/logo.png"
+
+ 
+
+Etiquetas <link>. Sirven para indicar que el documento html está relacionado con otro archivo o recurso externo. Por ejemplo <link rel="stylesheet" type="text/css" href="estilos.css"> sirve para indicar que el documento HTML está vinculado al archivo estilos.css
+
+ 
+
+Etiqueta <style>. Sirve para incluir estilos CSS que permiten dotar de colores, bordes, imágenes de fondo, etc. a los elementos de la página web.
+
+ 
+
+Etiquetas <meta>. Sirven para incluir información que no se muestra como parte de la página web pero sirve para informar de características de la página web, como su descripción breve y sus palabras clave.
+
+Ejemplo:
+
+<meta name="description" content="Didáctica y divulgación de la programación aprenderaprogramar.com">
+
+<meta name="keywords" content="didáctica, divulgación, programación, aprender">
+
+En este caso las etiquetas le indican a los buscadores el contenido de nuestras páginas (description) y algunas palabras clave (keywords) para su localización. Esto es muy útil para que nuestra página aparezca en los buscadores (google, bing, yahoo, etc.).
+
+ 
+
+Etiquetas <script>. Sirven para incluir código en lenguajes de script.
+
+Dentro de la cabecera en muchas páginas se incluye código en JavaScript, que es un lenguaje de programación que los navegadores son capaces de reconocer e interpretar. El código JavaScript se reconoce porque va comprendido entre las etiquetas
+
+<script type="text/javascript">
+
+// Aquí iría el código
+
+</script>
+
+ 
+
+Nosotros en este curso no vamos a estudiar JavaScript porque nos vamos a centrar en las cuestiones básicas de HTML, pero si continuas avanzando como programador web será un lenguaje que deberás tener en cuenta más adelante.
+
+ 
+
+ 
+
+CUERPO (BODY) DEL DOCUMENTO HTML
+
+El cuerpo (body) del documento html es normalmente lo más importante. Es aquí donde debemos colocar el contenido de nuestra página: texto, fotos, etc.
+
+El cuerpo está delimitado por las etiquetas <body> y </body>.
+
+A lo largo del curso iremos estudiando qué elementos pueden existir dentro de la etiqueta body, así como cuál es su sintaxis y organización.
+
+-->
+
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase Redes - HTML</title>
+
+	<!-- BOOTSTRAP -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- /BOOTSTRAP -->
+	
+	<link rel="stylesheet" type="text/css" href="css/estilosTabla.css">
+	
+</head>
+
+<body>
+<div class="pintarDeAzul" id="primerTitulo"> 
+	<h1> Ejemplo Tabla</h1>
+</div>
+<div class="row">
+	<div>
+			<!-- class="table table-bordered" Clase CSS BOOTSTRAP -->
+			<table>
+			  
+			  <tr>
+				<td>#</>
+				<td>Nombre</>
+				<td>Apellido</>
+				<td>Usuario</>
+			  </tr>
+			  
+			  <tr>
+				<td>1</>
+				<td>Mark</>
+				<td>Otto</>
+				<td>@MarOt</>
+			  </tr>
+			  
+			  <tr>
+				<td>2</>
+				<td>Juan</>
+				<td>Perez</>
+				<td>@JP</>
+			  </tr>
+			  
+			  <tr>
+				<td>3</>
+				<td>Diego</>
+				<td>Diaz</>
+				<td>@DiegoD</>
+			  </tr>
+			  
+			  <tr>
+				<td>4</>
+				<td>Esteban</>
+				<td>Muri</>
+				<td>@MuriEst</>
+			  </tr>
+			  
+			  <tr>
+				<td>5</>
+				<td>Simon</>
+				<td>Otis</>
+				<td>@sO</>
+			  </tr>
+			
+			</table>
+	</div>
+</div>
+</body>
+</html>
